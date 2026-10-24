@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Save and Create Next",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "r_UDFOW2IEG5-PM3-Cz63g",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/r_UDFOW2IEG5-PM3-Cz63g",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T06:26:08.8795259Z",
+  "Updated": "2026-10-22T06:26:08.8795259Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KMP5bVeVWECsFNNGdkRgQA" Reference="QUm8kylToUOw1yU7nGDriw/REYIl9AkV023DWEP_gic-A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="fa-exho-test-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" DesignTimeRectangle="562, 498, 218, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aria-label='* Supplier' type='text' /&gt;" Guid="25b1075a-b697-409f-8572-847455a34697" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dc573b115c88cc5be91732e3f234fcaf.jpg" xmlns="">0huS1MzbcX0yHF17f0ev6cQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

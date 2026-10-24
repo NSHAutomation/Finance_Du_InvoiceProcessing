@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Payables",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "aHZ5COC6MEio-gc8E78vew",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/aHZ5COC6MEio-gc8E78vew",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-20T11:14:50.2503587Z",
+  "Updated": "2026-10-20T11:14:50.2503587Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

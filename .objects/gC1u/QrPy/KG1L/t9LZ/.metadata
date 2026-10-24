@@ -1,0 +1,14 @@
+﻿{
+  "Name": "The document sequence N…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "t9LZGNxBh06bw1yAOG8zjg",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/t9LZGNxBh06bw1yAOG8zjg",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-24T12:04:42.6489833Z",
+  "Updated": "2026-10-24T12:04:42.6489833Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

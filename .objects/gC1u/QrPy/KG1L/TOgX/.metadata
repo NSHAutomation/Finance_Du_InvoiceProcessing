@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Expand Line Items",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "TOgXnjBTq0W7HfOUr6_8Lw",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/TOgXnjBTq0W7HfOUr6_8Lw",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T06:04:50.1229931Z",
+  "Updated": "2026-10-22T06:05:11.7861385Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

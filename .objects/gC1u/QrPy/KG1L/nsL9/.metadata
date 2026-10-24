@@ -1,0 +1,17 @@
+﻿{
+  "Name": "OK-Voucher Number",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "nsL9cwQGeEWhQ3-v3CwOig",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/nsL9cwQGeEWhQ3-v3CwOig",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-24T12:27:33.6203445Z",
+  "Updated": "2026-10-24T12:32:19.449712Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

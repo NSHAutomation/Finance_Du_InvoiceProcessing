@@ -1,0 +1,14 @@
+﻿{
+  "Name": "You cannot bookmark and…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dUa6aEcdyUWbpBGn2hlzhw",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/dUa6aEcdyUWbpBGn2hlzhw",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-19T07:06:03.2641293Z",
+  "Updated": "2026-10-19T07:06:03.2641293Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

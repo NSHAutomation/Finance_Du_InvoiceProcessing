@@ -1,0 +1,17 @@
+﻿{
+  "Name": "SELECT-Contact Information",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "mQBVbl7KAEOGnmRgRd5aoQ",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/mQBVbl7KAEOGnmRgRd5aoQ",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T05:55:04.6192475Z",
+  "Updated": "2026-10-22T05:55:33.3570614Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

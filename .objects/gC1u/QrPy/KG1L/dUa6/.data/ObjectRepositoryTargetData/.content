@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jaDsilGcB0uFzhXQTs43wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idcs-7dc3d366fe8c4f3a8eba42403d45ff0b.identity.oraclecloud.com/ui/v1/signin" DesignTimeRectangle="727, 602, 482, 52" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='idcs-app-shell' tag='OJ-IDAAS-SIGNIN-APP-SHELL-RW' /&gt;&lt;webctrl tag='DIV' aaname='*You cannot bookmark and access the /signin URL directly.*' /&gt;" Guid="5714f040-5435-4a3c-a3c9-be4891c3ba45" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="bfa1d59ca388e49687fa287da3a093ed.jpg" xmlns="">0_-sKZF9tAU6npMAKXMvcqA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

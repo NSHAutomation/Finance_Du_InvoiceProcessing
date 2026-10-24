@@ -1,0 +1,14 @@
+﻿{
+  "Name": "DU",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "HE_KAEywMEu0QUX0uyBKZQ",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/HE_KAEywMEu0QUX0uyBKZQ",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-21T11:54:04.5355055Z",
+  "Updated": "2026-10-21T11:54:04.5355055Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

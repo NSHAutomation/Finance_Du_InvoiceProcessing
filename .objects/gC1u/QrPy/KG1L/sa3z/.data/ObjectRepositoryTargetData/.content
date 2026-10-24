@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4pYbIQ0rHUGipc1-5qKZWw" Reference="QUm8kylToUOw1yU7nGDriw/sa3zADkSq0-B54nzFWCHPg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idcs-7dc3d366fe8c4f3a8eba42403d45ff0b.identity.oraclecloud.com/ui/v1/signin" DesignTimeRectangle="725, 659, 55, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="[String.Format(&quot;&lt;webctrl id='idcs-mfa-mfa-auth-factors-section-content' tag='OJ-IDAAS-MODULE-ADAPTER' /&gt;&lt;webctrl idx='{0}' tag='INPUT' /&gt;&quot;,currentIndex.ToString)]" Guid="40f7e4be-7222-4c12-9a0b-4fdb57725f0a" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="e69aa0bd90ce749a69ed5b2d9cc9c642.jpg" xmlns="">0GMrb0rA8DEa2Ax5-1Mq_Aw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

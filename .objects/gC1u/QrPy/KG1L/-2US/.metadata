@@ -1,0 +1,17 @@
+﻿{
+  "Name": "INPUT-CommunityCode",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "-2USbyN15ESnnnPOMnbjgQ",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/-2USbyN15ESnnnPOMnbjgQ",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T06:20:12.1553577Z",
+  "Updated": "2026-10-22T06:20:54.7924963Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

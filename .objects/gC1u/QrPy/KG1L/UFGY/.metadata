@@ -1,0 +1,17 @@
+﻿{
+  "Name": "IMG-DistibutionCommition Search",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "UFGYHtf4BkG5MmVJcAPACw",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/UFGYHtf4BkG5MmVJcAPACw",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T06:16:03.5515128Z",
+  "Updated": "2026-10-22T06:18:52.6800052Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

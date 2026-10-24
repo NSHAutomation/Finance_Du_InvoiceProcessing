@@ -1,0 +1,17 @@
+﻿{
+  "Name": "INPUT-AccountNumber",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "sbu2ntzvTUGJlTBSmfdNNQ",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/sbu2ntzvTUGJlTBSmfdNNQ",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T06:21:57.8718191Z",
+  "Updated": "2026-10-22T06:22:27.3803574Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

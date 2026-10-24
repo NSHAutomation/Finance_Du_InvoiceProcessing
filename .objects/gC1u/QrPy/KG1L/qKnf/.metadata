@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Search Supplier",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "qKnflbC2JkSBN0BGXCsaGA",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/qKnflbC2JkSBN0BGXCsaGA",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-21T11:52:10.4373987Z",
+  "Updated": "2026-10-21T11:52:34.2327949Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Create Invoice",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "a1Tt4BjYqkyeEohAch0ndQ",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/a1Tt4BjYqkyeEohAch0ndQ",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-20T11:16:43.9720541Z",
+  "Updated": "2026-10-20T11:16:43.9720541Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

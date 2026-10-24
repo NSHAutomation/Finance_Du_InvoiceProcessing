@@ -1,0 +1,17 @@
+﻿{
+  "Name": "INPUT--ServiceEndDate",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "wTsJ_5O3KkexadhSbCPONA",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/wTsJ_5O3KkexadhSbCPONA",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-22T05:58:18.6220425Z",
+  "Updated": "2026-10-22T05:58:42.9618835Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

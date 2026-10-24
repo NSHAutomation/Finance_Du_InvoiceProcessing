@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hTkFHHQtNkej4rJ5VFrElg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idcs-7dc3d366fe8c4f3a8eba42403d45ff0b.identity.oraclecloud.com/ui/v1/signin" DesignTimeRectangle="725, 699, 480, 42" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='*oj-button-label*' tag='DIV' visibleinnertext='Next' /&gt;" Guid="4807553d-21ad-423d-9963-68a785b4b9a9" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="78873535a3101e9d8484009c6b1c5c29.jpg" xmlns="">00KBPkbS_1EWpuOyN8P_lhg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
