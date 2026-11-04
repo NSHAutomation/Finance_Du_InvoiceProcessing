@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Tap Allow on the notifi…",
+  "Type": "Element",
+  "Id": "X4-6B7BGpUS1dcNLENQbIw",
+  "Reference": "QUm8kylToUOw1yU7nGDriw/X4-6B7BGpUS1dcNLENQbIw",
+  "ParentRef": "QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw",
+  "Created": "2026-10-28T07:18:04.8816619Z",
+  "Updated": "2026-10-28T07:18:04.8816619Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
