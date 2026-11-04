@@ -99,39 +99,39 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Fusion_NavigateToCreateInvoice" sap:VirtualizedContainerService.HintSize="1449,1764" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Fusion_NavigateToCreateInvoice" sap:VirtualizedContainerService.HintSize="1568,1768" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence-Navigate To Create Invoice" sap:VirtualizedContainerService.HintSize="758,1741" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence-Navigate To Create Invoice" sap:VirtualizedContainerService.HintSize="758,1745" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch-Create Invoice" sap:VirtualizedContainerService.HintSize="724,1658" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch-Create Invoice" sap:VirtualizedContainerService.HintSize="724,1662" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="722,1152" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="722,1156" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="688,1092" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="a0e0cdf4-53d1-472b-ac93-c0e4b784bd25" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="688,1096" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="a0e0cdf4-53d1-472b-ac93-c0e4b784bd25" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="686,897" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="686,901" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState DisplayName="Check App State 'Click 'Create Invoice''" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="652,837" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a0e0cdf4-53d1-472b-ac93-c0e4b784bd25" Version="V5">
+                    <uix:NCheckState DisplayName="Check App State 'Click 'Create Invoice''" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="652,841" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a0e0cdf4-53d1-472b-ac93-c0e4b784bd25" Version="V5">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="650,226" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
@@ -217,7 +217,7 @@
                 </ActivityFunc>
               </uix:NApplicationCard.OCREngine>
               <uix:NApplicationCard.TargetApp>
-                <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="ajSNhO-gjkqAdSbGIMZugA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASzSURBVFhH7VZbbBRVGP4xEbnYEFKNtwQE443oRgEhWrtdd86Z2W2LsoXtnDPd9oGiYoAUY6JUE+KbidEoiREjJibW+KRoHwiEiLGKGpVeaLfb3e3eZ3ZUqlYfDNDb+s/MmbppGimlDzz0S77sv2fOOf8//3VgEYu4JnFYkcDzaDP8uLNmZb8mr0/sDm9KP8u2pp5R50w8s3mQK3f1NFTfyKqCcIR6xe3/gzPMD8e4f0mc03tyTG7XOflK51Le4PKooSl/G/yKOGpwoutM6soxeiiuShu6ttVc1x3yCW0zMITK+1WpIsfpAYPTdJGTKZORkkWU50cmCdlf0pk/n2PkpZgqr0qoVGgVSGm1MMTrKnWuHMUDY+WXmK5cZoyJF1t05LK90wrd/65srdvPxgtc7oir5JaUShzlUa5Aj6qsyHPl3SKnk+UXoNLzBiOf57n8alqlbVlVbssgs7ZMheysZew1Yv9ae3OqfEhn5FO88xdLueEYYFPn9MOYJlckNRmg1CxBjgdaceNFdwOGYELn8mdpRrZ0hfxLR5oC8MoTjzgWzwFNXg8Um+rgZIPv+mEe2Kgz+gneW+ZZOpZnyr7SPvTCsErXmkzpKTLqWjiV4/LRQVVeneYU2oKquHZ+SOId/SqpKHB6GMM5aYcFiZ4djDfSu/Ht6X6T0THXAHz774e4cvuwpogrrh4JNCLK6U0FLp2eDgUjE+jhg5Dn5KRlkTBgAg1q/SuiQEftHOp2juh8cguc5wFAhSpWxiWRkFgZ0rdoADUttziuoUYirNybbAyIowuHaFiBgbCyFl2PJe5HA2ipoNI/AJvFhGWNZQA+7OsNeSu7t1eLYwuHnh010Bf2V2Bz+84xwEl2QPeP2zGxXMJJX3eDt/Ln0MIb0L3DB71hqcLKMTcEyHEoMMlwFwxGzbgauD/JguLYwiEWDkB0Z2AdlmTW1VdgZAQNkI8La9AlZDLD5D0XWmrhY2WzOHr1eMtbDaPNMmQ4jaByrDhHHza4rwG71x6MP2amCAOjZ+MsuCaFWbtQsMuQKbdiL/jGZBh/bNlYjuNo0Asw1EjuwJb5E8bf8oBwjdKBjehmHVvlO/4acc2Vo/mBO/EFJawAaTW6+32cFfaAsxuRRs/FGV0HUy0UsrZr6D+uF6yOhUPjRIorvjNhurz0wUFolraKay+P56s2QunFBvghLC0b1vxVmGdfoGK72mwycjGjKU+XGh8DwKTDVhm8Ad3zJj6c3uRMQfpngZNTOSa9gd542YjI7cWmQLseUWwaKNuMONQFC8gso6+jV0+gV3+3x7KIO3bdSYPJR841khWD7kRMcQJRVVqFHx5v44YL00ZMH3Jlaww7v67s7pmNpkZtlq1dwhx7L8GDlRltRo45nqhbjoMIJyOJmjNH8zz4nwF0Cks8kWd07wDzrUxqktA6A18+5YOWTQ9BktE1WU725pnUickTx9H8K3KkqFFBS5ZHzFlor3M6gq7/DZUmMbTHcd4cwE+y9a8FpCWdqOOyeO7xh6G0ux5O1VcvHQiT23q1uvvOavUPZnZt9+RbQ8gGTwGpz0LrWX5XyBOL1G+IYYWd3uZdVvpIg/2YmItYxDUIgH8Bt0S8Mt9rTRYAAAAASUVORK5CYII=" InformativeScreenshot="094ecb0284c0efb0afb797279fa6ede8.jpg" Reference="QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw" Selector="&lt;html app='chrome.exe' title='*' /&gt;" Url="https://fa-exho-test-saasfaprod1.fa.ocs.oraclecloud.com" Version="V3" />
+                <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="aKX9VCVvb0qPMS-HTG8LwA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASzSURBVFhH7VZbbBRVGP4xEbnYEFKNtwQE443oRgEhWrtdd86Z2W2LsoXtnDPd9oGiYoAUY6JUE+KbidEoiREjJibW+KRoHwiEiLGKGpVeaLfb3e3eZ3ZUqlYfDNDb+s/MmbppGimlDzz0S77sv2fOOf8//3VgEYu4JnFYkcDzaDP8uLNmZb8mr0/sDm9KP8u2pp5R50w8s3mQK3f1NFTfyKqCcIR6xe3/gzPMD8e4f0mc03tyTG7XOflK51Le4PKooSl/G/yKOGpwoutM6soxeiiuShu6ttVc1x3yCW0zMITK+1WpIsfpAYPTdJGTKZORkkWU50cmCdlf0pk/n2PkpZgqr0qoVGgVSGm1MMTrKnWuHMUDY+WXmK5cZoyJF1t05LK90wrd/65srdvPxgtc7oir5JaUShzlUa5Aj6qsyHPl3SKnk+UXoNLzBiOf57n8alqlbVlVbssgs7ZMheysZew1Yv9ae3OqfEhn5FO88xdLueEYYFPn9MOYJlckNRmg1CxBjgdaceNFdwOGYELn8mdpRrZ0hfxLR5oC8MoTjzgWzwFNXg8Um+rgZIPv+mEe2Kgz+gneW+ZZOpZnyr7SPvTCsErXmkzpKTLqWjiV4/LRQVVeneYU2oKquHZ+SOId/SqpKHB6GMM5aYcFiZ4djDfSu/Ht6X6T0THXAHz774e4cvuwpogrrh4JNCLK6U0FLp2eDgUjE+jhg5Dn5KRlkTBgAg1q/SuiQEftHOp2juh8cguc5wFAhSpWxiWRkFgZ0rdoADUttziuoUYirNybbAyIowuHaFiBgbCyFl2PJe5HA2ipoNI/AJvFhGWNZQA+7OsNeSu7t1eLYwuHnh010Bf2V2Bz+84xwEl2QPeP2zGxXMJJX3eDt/Ln0MIb0L3DB71hqcLKMTcEyHEoMMlwFwxGzbgauD/JguLYwiEWDkB0Z2AdlmTW1VdgZAQNkI8La9AlZDLD5D0XWmrhY2WzOHr1eMtbDaPNMmQ4jaByrDhHHza4rwG71x6MP2amCAOjZ+MsuCaFWbtQsMuQKbdiL/jGZBh/bNlYjuNo0Asw1EjuwJb5E8bf8oBwjdKBjehmHVvlO/4acc2Vo/mBO/EFJawAaTW6+32cFfaAsxuRRs/FGV0HUy0UsrZr6D+uF6yOhUPjRIorvjNhurz0wUFolraKay+P56s2QunFBvghLC0b1vxVmGdfoGK72mwycjGjKU+XGh8DwKTDVhm8Ad3zJj6c3uRMQfpngZNTOSa9gd542YjI7cWmQLseUWwaKNuMONQFC8gso6+jV0+gV3+3x7KIO3bdSYPJR841khWD7kRMcQJRVVqFHx5v44YL00ZMH3Jlaww7v67s7pmNpkZtlq1dwhx7L8GDlRltRo45nqhbjoMIJyOJmjNH8zz4nwF0Cks8kWd07wDzrUxqktA6A18+5YOWTQ9BktE1WU725pnUickTx9H8K3KkqFFBS5ZHzFlor3M6gq7/DZUmMbTHcd4cwE+y9a8FpCWdqOOyeO7xh6G0ux5O1VcvHQiT23q1uvvOavUPZnZt9+RbQ8gGTwGpz0LrWX5XyBOL1G+IYYWd3uZdVvpIg/2YmItYxDUIgH8Bt0S8Mt9rTRYAAAAASUVORK5CYII=" InformativeScreenshot="094ecb0284c0efb0afb797279fa6ede8.jpg" Reference="QUm8kylToUOw1yU7nGDriw/KG1LJmnOxUe1H5SrNqUhVw" Selector="&lt;html app='chrome.exe' title='*' /&gt;" Url="https://idcs-918d836001d54712a3de1b260aad570e.identity.oraclecloud.com/ui/v1/signin" Version="V3" />
               </uix:NApplicationCard.TargetApp>
             </uix:NApplicationCard>
           </Sequence>

@@ -159,7 +159,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MistralAI_GetMobileInvoiceData" sap:VirtualizedContainerService.HintSize="1449,2571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MistralAI_GetMobileInvoiceData" sap:VirtualizedContainerService.HintSize="1913,2967" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="pdfPageCount" />
       <Variable x:TypeArguments="x:Int32" Name="currentIndex" />
@@ -327,13 +327,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
     </Sequence>
-    <Sequence DisplayName="Sequence-Mistrial AI - Get Mobile Invoice Data" sap:VirtualizedContainerService.HintSize="650,2227" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence-Mistrial AI - Get Mobile Invoice Data" sap:VirtualizedContainerService.HintSize="650,2623" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch-Mistrial AI - Get Mobile Invoice Data" sap:VirtualizedContainerService.HintSize="616,2144" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch-Mistrial AI - Get Mobile Invoice Data" sap:VirtualizedContainerService.HintSize="616,2540" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -341,14 +341,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,1638" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="522,2034" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Read Range Workbook-Mobile Invoice" sap:VirtualizedContainerService.HintSize="488,227" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Mobile" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]" />
-            <If Condition="[io_dt_MobileInvoiceLineItems.RowCount&gt;0]" DisplayName="If-Read Mobile Invoice And Vallidate Row Count" sap:VirtualizedContainerService.HintSize="488,1351" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[io_dt_MobileInvoiceLineItems.RowCount&gt;0]" DisplayName="If-Read Mobile Invoice And Vallidate Row Count" sap:VirtualizedContainerService.HintSize="488,1747" sap2010:WorkflowViewState.IdRef="If_5">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,226" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <sap:WorkflowViewStateService.ViewState>
@@ -360,7 +360,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,963" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,1359" sap2010:WorkflowViewState.IdRef="Sequence_21">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -481,267 +481,289 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uwah:NetHttpRequest>
-                  <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON-Mobile Response TextContent" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[mobileRequestResponseJobj]" JsonString="[mobileRequestResponse.TextContent]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:DeserializeJson>
-                  <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON-Mobile Response Jobj Document Annotation" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[mobileRequestResponseJobj]" JsonString="[mobileRequestResponseJobj(&quot;document_annotation&quot;).ToString]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:DeserializeJson>
-                  <Assign DisplayName="Assign-InvoiceDate" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_4">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_InvoiceDate]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("invoiceDate").ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-Due Date" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_13">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_DueDate]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("dueDate").ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-Your Bill Cycle From" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_10">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_YourBillCycleFrom]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("yourBillCycle").ToString.Split("-"c)(0).ToString+Date.Now.ToString("yyyy"),"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-Your Bill Cycle To" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_12">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_YourBillCycleTo]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("yourBillCycle").ToString.Split("-"c)(1).ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-This Month Charges" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_5">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_ThisMonthCharges]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("thisMonthCharges").ToString.Replace(",","")]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-VAT" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_6">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_VAT]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("VAT").ToString]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-Your Bill Number" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_7">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_YourBillNumber]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("yourBillNumber").ToString]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-Your Account Number" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_8">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[out_YourAccountNumber]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("yourAccountNumber").ToString]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="Assign-LineItems" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Assign_9">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="sd:DataTable">[out_dt_MobileInvoiceLineItems]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="sd:DataTable">[JsonConvert.DeserializeObject(Of DataTable)(mobileRequestResponseJobj("lineItems").ToString)]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <ui:FileExistsX DisplayName="File Exists- is Mobile Invoice Sheet Exist" Exists="[is_FileCreated]" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:FileExistsX>
-                  <If Condition="[is_FileCreated]" DisplayName="If- is mobile invoice created " sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="If_4">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[mobileRequestResponse.StatusCode&gt;=200 OrElse mobileRequestResponse.StatusCode&lt;300]" DisplayName="If-StatusCode Mobile Invoice Extraction" sap:VirtualizedContainerService.HintSize="452,1128" sap2010:WorkflowViewState.IdRef="If_6">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,792" sap2010:WorkflowViewState.IdRef="Sequence_22">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Mobile Invoice ExcelFile Already Created&quot;]" />
-                      </Sequence>
-                    </If.Then>
-                    <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,279" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[out_dt_MobileInvoiceLineItems]" DisplayName="For Each Row in Data Table-Mobile Invoice Line Items" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                          <ui:ForEachRow.Body>
-                            <ActivityAction x:TypeArguments="sd:DataRow">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,622" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign DisplayName="Assign-CommunityName" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_14">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[communityName]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[in_distMobileCommunitys.Where(Function(kvp) kvp.Value.Item2.Contains(CurrentRow("serviceId").ToString.Trim)).Select(Function(kvp) kvp.Value.Item1).FirstOrDefault()]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <Assign DisplayName="Assign-CommunityCode" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_15">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[communityCode]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[in_distMobileCommunitys.Where(Function(kvp) kvp.Value.Item2.Contains(CurrentRow("serviceId").ToString.Trim)).Select(Function(kvp) kvp.Key).FirstOrDefault()]</InArgument>
-                                  </Assign.Value>
-                                </Assign>
-                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#x9;&#xA;&#x9;out_InvoiceDate,&#xA;&#x9;out_DueDate,&#xA;&#x9;out_YourBillCycleFrom,&#xA;&#x9;out_YourBillCycleTo,&#xA;&#x9;out_ThisMonthCharges,&#xA;&#x9;out_VAT,&#xA;&#x9;out_YourBillNumber,&#xA;&#x9;out_YourAccountNumber,&#xA;&#x9;communityName,&#xA;&#x9;communityCode,&#xA;&#x9;CurrentRow(&quot;serviceId&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;ratePlan&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;monthlyCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;nationalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;internationalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;roamingCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;additionalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;discount&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;credit&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;commitmentFee&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;subTotal&quot;).Tostring&#xA;}]" DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                              </Sequence>
-                            </ActivityAction>
-                          </ui:ForEachRow.Body>
+                        <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON-Mobile Response TextContent" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[mobileRequestResponseJobj]" JsonString="[mobileRequestResponse.TextContent]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </ui:ForEachRow>
-                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim dt As New System.Data.DataTable&#xA;Dim cols() As String = {&quot;Invoice Date&quot;,&quot;Due Date&quot;, &quot;Your Bill Cycle From&quot;, &quot;Your Bill Cycle To&quot;, &quot;This Month Charges&quot;, &quot;VAT&quot;, &quot;Your Bill Number&quot;, &quot;Your Account Number&quot;, &quot;Community Name&quot;, &quot;Community Code&quot;, &quot;Service ID&quot;, &quot;Sub Total&quot;,&quot;Status&quot;,&quot;Voucher Number&quot;}&#xA;For Each c As String In cols&#xA;    dt.Columns.Add(c, GetType(String))&#xA;Next&#xA;&#xA;' Service ID -&gt; Community Code, built from the dictionary (key = code)&#xA;Dim idToCode As New System.Collections.Generic.Dictionary(Of String, String)&#xA;For Each kvp As System.Collections.Generic.KeyValuePair(Of String, System.Tuple(Of String, System.Collections.Generic.List(Of String))) In in_distMobileCommunitys&#xA;    For Each id As String In kvp.Value.Item2&#xA;        If Not idToCode.ContainsKey(id) Then idToCode.Add(id, kvp.Key)&#xA;    Next&#xA;Next&#xA;&#xA;' Group the Mobile rows by code. Service IDs not in the dictionary stay as separate rows.&#xA;Dim groups = dt_Mobile.AsEnumerable().GroupBy(Function(r As System.Data.DataRow) _&#xA;    If(idToCode.ContainsKey(r(&quot;Service ID&quot;).ToString.Trim), idToCode(r(&quot;Service ID&quot;).ToString.Trim), &quot;NOCODE_&quot; &amp; r(&quot;Service ID&quot;).ToString.Trim))&#xA;&#xA;Dim unmatched As New System.Collections.Generic.List(Of String)&#xA;&#xA;For Each g In groups&#xA;    Dim first As System.Data.DataRow = g.First()&#xA;    Dim noCode As Boolean = g.Key.StartsWith(&quot;NOCODE_&quot;)&#xA;    Dim code As String = If(noCode, &quot;&quot;, g.Key)&#xA;&#xA;    Dim ids As String = String.Join(&quot;,&quot; &amp; Environment.NewLine, g.Select(Function(r As System.Data.DataRow) r(&quot;Service ID&quot;).ToString.Trim))&#xA;&#xA;    Dim names As String&#xA;    If noCode Then&#xA;        names = String.Join(&quot; / &quot;, g.Select(Function(r As System.Data.DataRow) r(&quot;Community Name&quot;).ToString.Trim).Distinct())&#xA;        unmatched.Add(g.Key.Substring(7))&#xA;    Else&#xA;        names = in_distMobileCommunitys(g.Key).Item1&#xA;    End If&#xA;&#xA;    Dim total As Decimal = g.Sum(Function(r As System.Data.DataRow) Decimal.Parse(r(&quot;Sub Total&quot;).ToString.Trim, System.Globalization.CultureInfo.InvariantCulture))&#xA;&#xA;    dt.Rows.Add(first(&quot;Invoice Date&quot;).ToString,first(&quot;Due Date&quot;).ToString, first(&quot;Your Bill Cycle From&quot;).ToString.Trim, first(&quot;Your Bill Cycle To&quot;).ToString.Trim, _&#xA;                first(&quot;This Month Charges&quot;).ToString, first(&quot;VAT&quot;).ToString, first(&quot;Your Bill Number&quot;).ToString, _&#xA;                first(&quot;Your Account Number&quot;).ToString, names, code, ids, total.ToString(&quot;0.00&quot;, System.Globalization.CultureInfo.InvariantCulture))&#xA;Next&#xA;&#xA;dt_Out = dt&#xA;str_Unmatched = String.Join(&quot;,&quot;, unmatched)" DisplayName="Invoke Code- Add Sub Total of same cumminities and generate consolidated excel" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
-                          <ui:InvokeCode.Arguments>
-                            <OutArgument x:TypeArguments="sd:DataTable" x:Key="dt_Out">[io_dt_MobileInvoiceLineItems]</OutArgument>
-                            <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_Mobile">[io_dt_MobileInvoiceLineItems]</InArgument>
-                            <InArgument x:TypeArguments="scg:Dictionary(x:String, s:Tuple(x:String, scg:List(x:String)))" x:Key="in_distMobileCommunitys">[in_distMobileCommunitys]</InArgument>
-                            <OutArgument x:TypeArguments="x:String" x:Key="str_Unmatched">[strUnMatched]</OutArgument>
-                          </ui:InvokeCode.Arguments>
+                        </ui:DeserializeJson>
+                        <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON-Mobile Response Jobj Document Annotation" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[mobileRequestResponseJobj]" JsonString="[mobileRequestResponseJobj(&quot;document_annotation&quot;).ToString]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </ui:InvokeCode>
-                        <ui:WriteRange StartingCell="{x:Null}" DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Mobile" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
+                        </ui:DeserializeJson>
+                        <Assign DisplayName="Assign-InvoiceDate" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_InvoiceDate]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("invoiceDate").ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
+                          </Assign.Value>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </ui:WriteRange>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="650,108" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        </Assign>
+                        <Assign DisplayName="Assign-Due Date" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_13">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_DueDate]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("dueDate").ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-Your Bill Cycle From" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_YourBillCycleFrom]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("yourBillCycle").ToString.Split("-"c)(0).ToString+Date.Now.ToString("yyyy"),"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-Your Bill Cycle To" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_12">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_YourBillCycleTo]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mobileRequestResponseJobj("yourBillCycle").ToString.Split("-"c)(1).ToString,"(\d{1,2})(?:st|nd|rd|th)\s+([A-Za-z]{3,9})\s+(\d{4})","$1-$2-$3",System.Text.RegularExpressions.RegexOptions.IgnoreCase)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-This Month Charges" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_ThisMonthCharges]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("thisMonthCharges").ToString.Replace(",","")]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-VAT" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_VAT]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("VAT").ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-Your Bill Number" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_YourBillNumber]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("yourBillNumber").ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-Your Account Number" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_YourAccountNumber]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[mobileRequestResponseJobj("yourAccountNumber").ToString]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <Assign DisplayName="Assign-LineItems" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="sd:DataTable">[out_dt_MobileInvoiceLineItems]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="sd:DataTable">[JsonConvert.DeserializeObject(Of DataTable)(mobileRequestResponseJobj("lineItems").ToString)]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:FileExistsX DisplayName="File Exists- is Mobile Invoice Sheet Exist" Exists="[is_FileCreated]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:FileExistsX>
+                        <If Condition="[is_FileCreated]" DisplayName="If- is mobile invoice created " sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_18">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:AppendRange DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Append Range Workbook-Append Exteracted Data And Line Items" sap:VirtualizedContainerService.HintSize="616,48" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Mobile" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Mobile Invoice ExcelFile Already Created&quot;]" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,279" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[out_dt_MobileInvoiceLineItems]" DisplayName="For Each Row in Data Table-Mobile Invoice Line Items" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,622" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign-CommunityName" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[communityName]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[in_distMobileCommunitys.Where(Function(kvp) kvp.Value.Item2.Contains(CurrentRow("serviceId").ToString.Trim)).Select(Function(kvp) kvp.Value.Item1).FirstOrDefault()]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <Assign DisplayName="Assign-CommunityCode" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[communityCode]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String">[in_distMobileCommunitys.Where(Function(kvp) kvp.Value.Item2.Contains(CurrentRow("serviceId").ToString.Trim)).Select(Function(kvp) kvp.Key).FirstOrDefault()]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#x9;&#xA;&#x9;out_InvoiceDate,&#xA;&#x9;out_DueDate,&#xA;&#x9;out_YourBillCycleFrom,&#xA;&#x9;out_YourBillCycleTo,&#xA;&#x9;out_ThisMonthCharges,&#xA;&#x9;out_VAT,&#xA;&#x9;out_YourBillNumber,&#xA;&#x9;out_YourAccountNumber,&#xA;&#x9;communityName,&#xA;&#x9;communityCode,&#xA;&#x9;CurrentRow(&quot;serviceId&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;ratePlan&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;monthlyCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;nationalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;internationalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;roamingCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;additionalCharges&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;discount&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;credit&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;commitmentFee&quot;).Tostring,&#xA;&#x9;CurrentRow(&quot;subTotal&quot;).Tostring&#xA;}]" DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                              </ui:AppendRange>
+                              </ui:ForEachRow>
+                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim dt As New System.Data.DataTable&#xA;Dim cols() As String = {&quot;Invoice Date&quot;,&quot;Due Date&quot;, &quot;Your Bill Cycle From&quot;, &quot;Your Bill Cycle To&quot;, &quot;This Month Charges&quot;, &quot;VAT&quot;, &quot;Your Bill Number&quot;, &quot;Your Account Number&quot;, &quot;Community Name&quot;, &quot;Community Code&quot;, &quot;Service ID&quot;, &quot;Sub Total&quot;,&quot;Status&quot;,&quot;Voucher Number&quot;}&#xA;For Each c As String In cols&#xA;    dt.Columns.Add(c, GetType(String))&#xA;Next&#xA;&#xA;' Service ID -&gt; Community Code, built from the dictionary (key = code)&#xA;Dim idToCode As New System.Collections.Generic.Dictionary(Of String, String)&#xA;For Each kvp As System.Collections.Generic.KeyValuePair(Of String, System.Tuple(Of String, System.Collections.Generic.List(Of String))) In in_distMobileCommunitys&#xA;    For Each id As String In kvp.Value.Item2&#xA;        If Not idToCode.ContainsKey(id) Then idToCode.Add(id, kvp.Key)&#xA;    Next&#xA;Next&#xA;&#xA;' Group the Mobile rows by code. Service IDs not in the dictionary stay as separate rows.&#xA;Dim groups = dt_Mobile.AsEnumerable().GroupBy(Function(r As System.Data.DataRow) _&#xA;    If(idToCode.ContainsKey(r(&quot;Service ID&quot;).ToString.Trim), idToCode(r(&quot;Service ID&quot;).ToString.Trim), &quot;NOCODE_&quot; &amp; r(&quot;Service ID&quot;).ToString.Trim))&#xA;&#xA;Dim unmatched As New System.Collections.Generic.List(Of String)&#xA;&#xA;For Each g In groups&#xA;    Dim first As System.Data.DataRow = g.First()&#xA;    Dim noCode As Boolean = g.Key.StartsWith(&quot;NOCODE_&quot;)&#xA;    Dim code As String = If(noCode, &quot;&quot;, g.Key)&#xA;&#xA;    Dim ids As String = String.Join(&quot;,&quot; &amp; Environment.NewLine, g.Select(Function(r As System.Data.DataRow) r(&quot;Service ID&quot;).ToString.Trim))&#xA;&#xA;    Dim names As String&#xA;    If noCode Then&#xA;        names = String.Join(&quot; / &quot;, g.Select(Function(r As System.Data.DataRow) r(&quot;Community Name&quot;).ToString.Trim).Distinct())&#xA;        unmatched.Add(g.Key.Substring(7))&#xA;    Else&#xA;        names = in_distMobileCommunitys(g.Key).Item1&#xA;    End If&#xA;&#xA;    Dim total As Decimal = g.Sum(Function(r As System.Data.DataRow) Decimal.Parse(r(&quot;Sub Total&quot;).ToString.Trim, System.Globalization.CultureInfo.InvariantCulture))&#xA;&#xA;    dt.Rows.Add(first(&quot;Invoice Date&quot;).ToString,first(&quot;Due Date&quot;).ToString, first(&quot;Your Bill Cycle From&quot;).ToString.Trim, first(&quot;Your Bill Cycle To&quot;).ToString.Trim, _&#xA;                first(&quot;This Month Charges&quot;).ToString, first(&quot;VAT&quot;).ToString, first(&quot;Your Bill Number&quot;).ToString, _&#xA;                first(&quot;Your Account Number&quot;).ToString, names, code, ids, total.ToString(&quot;0.00&quot;, System.Globalization.CultureInfo.InvariantCulture))&#xA;Next&#xA;&#xA;dt_Out = dt&#xA;str_Unmatched = String.Join(&quot;,&quot;, unmatched)" DisplayName="Invoke Code- Add Sub Total of same cumminities and generate consolidated excel" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                                <ui:InvokeCode.Arguments>
+                                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="dt_Out">[io_dt_MobileInvoiceLineItems]</OutArgument>
+                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_Mobile">[io_dt_MobileInvoiceLineItems]</InArgument>
+                                  <InArgument x:TypeArguments="scg:Dictionary(x:String, s:Tuple(x:String, scg:List(x:String)))" x:Key="in_distMobileCommunitys">[in_distMobileCommunitys]</InArgument>
+                                  <OutArgument x:TypeArguments="x:String" x:Key="str_Unmatched">[strUnMatched]</OutArgument>
+                                </ui:InvokeCode.Arguments>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:InvokeCode>
+                              <ui:WriteRange StartingCell="{x:Null}" DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Mobile" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:WriteRange>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="650,108" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:AppendRange DataTable="[io_dt_MobileInvoiceLineItems]" DisplayName="Append Range Workbook-Append Exteracted Data And Line Items" sap:VirtualizedContainerService.HintSize="616,48" sap2010:WorkflowViewState.IdRef="AppendRange_1" SheetName="Mobile" WorkbookPath="[&quot;C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\&quot;+date.Now.ToString(&quot;yyyy&quot;)+&quot;\&quot;+date.Now.ToString(&quot;MMM&quot;)+&quot;\InvoiceDetails.xlsx&quot;]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:AppendRange>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
                             </Sequence>
-                          </ui:CommentOut.Body>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:CommentOut>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Throw DisplayName="Throw-Callout Exception Mobile" Exception="[new SystemException(&quot;Callout Error Status Code: &quot;+mobileRequestResponse.StatusCode.ToString)]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Throw_2" />
                       </Sequence>
                     </If.Else>
                   </If>

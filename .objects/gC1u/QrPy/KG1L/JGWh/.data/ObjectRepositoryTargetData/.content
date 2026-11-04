@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oU5L9FrZAke-Ptx3lJJYrA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idcs-918d836001d54712a3de1b260aad570e.identity.oraclecloud.com/ui/v1/signin" DesignTimeRectangle="728, 807, 480, 42" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Try another way' visibleinnertext='Try another way' /&gt;&lt;webctrl class='*oj-button-label*' tag='DIV' /&gt;" Guid="44d5619a-eac7-49b9-ba63-091f61dda6b6" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="d88618afdbdd3005af4a90713baa4a65.jpg" xmlns="">0WWW9my7H_UixAj6bBl6qgQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

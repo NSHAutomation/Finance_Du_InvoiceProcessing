@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DCmEy3viDEG6K5sZQOYcqw" Reference="QUm8kylToUOw1yU7nGDriw/X4-6B7BGpUS1dcNLENQbIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="idcs-918d836001d54712a3de1b260aad570e.identity.oraclecloud.com/ui/v1/signin" DesignTimeRectangle="727, 435, 477, 129" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Tap*on the notification sent to your*to continue.' class='oj-complete' /&gt;" Guid="7ccdff82-af3e-48f7-82ea-527f98978885" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="411d0eea7b5ef859d2ebe970acd4acb9.jpg" xmlns="">0wX9ZHWW2ykuyOqsi9tjQNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
