@@ -11,6 +11,7 @@
     <x:Property Name="out_IsInvoiceSaved" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_VoucherNumber" Type="OutArgument(x:String)" />
     <x:Property Name="in_invoiceType" Type="InArgument(x:String)" />
+    <x:Property Name="in_FilePath" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -130,7 +131,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Fusion_CreateInvoice" sap:VirtualizedContainerService.HintSize="1571,10316" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Fusion_CreateInvoice" sap:VirtualizedContainerService.HintSize="1553,11830" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="totalMatch" />
     </Sequence.Variables>
@@ -139,15 +140,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence-CreateInvoice" sap:VirtualizedContainerService.HintSize="830,10293" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence-CreateInvoice" sap:VirtualizedContainerService.HintSize="830,11807" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch-Create Invoice" sap:VirtualizedContainerService.HintSize="796,10210" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch-Create Invoice" sap:VirtualizedContainerService.HintSize="796,11724" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="794,9704" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="794,11218" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -177,13 +178,13 @@
                 <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(in_ToDate.trim, "d-MMM-yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("dd/MM/yy")]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="760,9119" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="760,10633" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="758,8924" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="758,10438" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -323,6 +324,41 @@
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'General'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="fa-exho-test-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="77eFNkOYOkSCcdabJX9Ogw" DesignTimeRectangle="32, 371, 45, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='A' aaname='General' /&gt;" Guid="ca747942-4d04-48ff-a9c7-7ee4c3f408a7" InformativeScreenshot="758607214229c2c87bc00b1c587ef848.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/9UQ9l1LmykCNi0hGB3nV_g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Attachment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="DjClsyqTrkeFsOERx2IqKw" DesignTimeRectangle="1652, 531, 19, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' aaname='Manage Attachments' /&gt;" Guid="b189e252-c7f2-4cfe-8dae-e1fed5e5cbba" InformativeScreenshot="d58717361d08345fa2ddf6ecb71e0f7e.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/OyH480EYXkWS2eSjAvKUZQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT-File'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="s8dzD8qV5Uam62PhdYIMIQ" DesignTimeRectangle="593, 610, 300, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='File Name' type='file' /&gt;" Guid="144bb27b-4077-44b1-9514-0dd27d9d7651" InformativeScreenshot="2ae185023d463e8726a71afcb4a0fdaa.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/zHIT19WA_kOIPNS6JiIITA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,246" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="HardwareEvents" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Text="[in_FilePath]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="kmAlZUXECkCdpm5z0vExhQ" DesignTimeRectangle="201, 970, 1474, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='File name:' cls='Edit' /&gt;" Guid="9a7b11cc-7321-4a86-ba61-e57a37cd6a2a" InformativeScreenshot="988e799d0e3594b75ad0125a68dce9b8.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/3YuQLI0PLE2-p5VaA0t2Kw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='*' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="9HkktlCSi0SYHBx7NUR8xg" DesignTimeRectangle="1707, 994, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Open' cls='Button' /&gt;" Guid="f8dba309-8bcb-4bb9-91fa-90dd946ae2dd" InformativeScreenshot="7c60ed479dd3e8f7ca5da4cb5ef5b149.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/cDOWED2pi0mC8kShAoSn4g" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='*' title='Open' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT - Title'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,246" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="SameAsCard" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Text="[in_invoiceType+&quot;-Invoice&quot;]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="kA6sGQG2tEK5If8En0ESnQ" DesignTimeRectangle="904, 606, 150, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Title' type='text' /&gt;" Guid="9f4fb18f-25fe-4f85-b0f5-e64ab63d4a16" InformativeScreenshot="9252b213ffb215035f27889fe7042b4a.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/LDALEj8zHkyw_2qQ2wF2Tw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Attachment-Description'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,246" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="HardwareEvents" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Text="[in_invoiceType + &quot; Invoice-&quot; + in_CommunityName + &quot;-&quot; + Date.Now.AddMonths(-1).ToString(&quot;MMM-yyyy&quot;)]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="WtecewMqFkCY_vlO3kWUOg" DesignTimeRectangle="1065, 606, 150, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Description' type='text' /&gt;" Guid="32eb21fe-ff0b-4f65-9f81-6a66753a780f" InformativeScreenshot="7761aa241a4f8a3075b5a2d2c7c77951.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/Rnna9YGIsE-0TwWjKB07Wg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="fa-exho-test-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome" ContentHash="x1CO75yG_E2P625qm8mu7w" DesignTimeRectangle="1088, 770, 35, 28" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' aaname='OK' /&gt;" Guid="ec6df169-6ab4-477a-b9fe-674f6b3a7218" InformativeScreenshot="62bc4ea21a1e1ab4af6875c02e355d91.jpg" IsResponsive="True" Reference="QUm8kylToUOw1yU7nGDriw/Jy8_dnH49EKEuYTNYNWCpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
                       </uix:NClick.Target>
                     </uix:NClick>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DisplayName="Click 'Expand Line Items'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="724,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c6467fa-e581-4c5e-80f2-b16a2772da12" Version="V5">
