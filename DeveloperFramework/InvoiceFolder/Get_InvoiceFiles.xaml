@@ -111,7 +111,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_InvoiceFiles" sap:VirtualizedContainerService.HintSize="1913,1420" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_InvoiceFiles" sap:VirtualizedContainerService.HintSize="1571,1420" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="is_PresentMonthFolderExist" />
     </Sequence.Variables>
@@ -182,7 +182,7 @@
                 <OutArgument x:TypeArguments="scg:List(x:String)">[out_listOfInvoices]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="scg:List(x:String)" xml:space="preserve">[Directory.GetFiles("C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\FW__Du_Bills") _
+                <InArgument x:TypeArguments="scg:List(x:String)" xml:space="preserve">[Directory.GetFiles("C:\Users\SalesBot\Desktop\LAPBOT\Finance\DuInvoiceProcessing\Inputs\"+Date.Now.tostring("yyyy")+"\"+Date.Now.ToString("MMM")) _
     .Where(Function(f) Path.GetExtension(f).Equals(".pdf", StringComparison.OrdinalIgnoreCase)) _
     .ToList()]</InArgument>
               </Assign.Value>
